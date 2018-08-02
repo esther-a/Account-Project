@@ -1,4 +1,4 @@
-package accountApp;
+package account_app;
 
 public class Account {
 
@@ -55,4 +55,7 @@ public class Account {
 	{
 		return lastName;
 	}
+	
 }
+
+
