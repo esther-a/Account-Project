@@ -1,6 +1,7 @@
 package accountAppTest;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +9,6 @@ import java.util.Map;
 import org.junit.Test;
 
 import accountApp.Account;
-import accountApp.App;
 import accountApp.Hello;
 import accountApp.Service;
 
@@ -62,5 +62,17 @@ public class AppTest {
 		assertEquals("wrong account details", testService.getAcc(456), Dave);
 		
 		
+	}
+	
+	@Test 
+	public void Jason()
+	{
+		Service testJson = new Service();
+		Account b = new Account (145, "B", "Barbie");
+		testJson.addAcc(b);
+		testJson.JObj();
+		testJson.accountToJson(b);
+		assertNotNull("wrong map", testJson.JObj().get("145"));
+			
 	}
 }
