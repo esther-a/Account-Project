@@ -1,4 +1,4 @@
-package accountAppTest;
+package account_app_test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -8,9 +8,9 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import accountApp.Account;
-import accountApp.Hello;
-import accountApp.Service;
+import account_app.Account;
+import account_app.Hello;
+import account_app.Service;
 
 public class AppTest {
 

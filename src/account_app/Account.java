@@ -1,4 +1,4 @@
-package accountApp;
+package account_app;
 
 public class Account {
 
